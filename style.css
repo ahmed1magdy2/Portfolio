@@ -44,16 +44,24 @@ section{
 .main{
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url("img/background.jpg") no-repeat;
+    position: relative;
+    background-color: #000016;
     background-size: cover; 
     background-position: center;
+}
+.main img{
+    max-width: 40em;
+    position: relative;
+    left: 8em;
+    float: right;
+    border-radius: 1em;
+
 }
 .main h2{
     color: #fff;
     font-size: 1.4em;
     font-weight: 500;
+    position: relative;
 }
 
 .main h2 span{
@@ -137,4 +145,123 @@ section{
     font-size: 1.2em;
     font-weight: 700;
     margin: 10px;
+}
+.projects {
+    background-color: #000016;
+}
+.projects .content{
+    margin-top: 30px;
+}
+.project-card{
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease; 
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-image img{
+    width: 100%;
+}
+.project-card:hover .project-image{
+    opacity: 0.9;
+}
+.project-info{
+    padding: 1em;
+}
+.project-category{
+    font-size: 0.8em;
+    color: #000;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.more-details{
+    text-decoration: none;
+    color: #3a6cf4;
+}
+.more-details:hover{
+    color:#601cfc
+}
+.contact .card{
+    size: 10em;
+}
+.contact .icon{
+    font-size: 4em;
+}
+.contact .info h3{
+    color: #000;
+}
+.contact .info p{
+    font-size: 1.2em;
+}
+.footer{
+    background-color: #000016;
+    color:#fff;
+    display:flex;
+    padding: 2em;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+@media (max-width:1023px){
+    body{
+        font-size: 12px;
+    }
+    header{
+        padding: 10px 17px;
+    } 
+    .navigation a{
+        padding-left: 8px;
+    }
+    .title{
+        font-size: 1.7em;
+    }
+    section{
+        padding: 70px 15px;
+    }
+    .main-content h2{
+        font-size:1em;
+    }
+    .main-content h3{
+        font-size:1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 641px){
+    body{
+        font-size: 10px;
+    }
+    .main-content h2{
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+@media (max-width:300px){
+    body{
+        font-size: 8px;
+    }
+
 }
