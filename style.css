@@ -18,7 +18,9 @@ header{
     align-items: center;
     padding: 10px 200px;
 }
-
+.navigation{
+    max-height: 2.5em;
+}
 .logo{
     text-decoration: none;
     color: #3a6cf4;
@@ -33,7 +35,70 @@ header{
     font-weight: 500;
     font-size: 1.1em;
     padding-left: 30px;
+    
 }
+.btn {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: var(--gap);
+    padding: 0.6em;
+    cursor: pointer;
+    border-radius: var(--radius);
+    border: none;
+    box-shadow: var(--shadow);
+    position: relative;
+  }
+  
+  .bx {
+    font-size: 1.1em;
+  }
+  
+  .dropdown {
+    position: relative;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    margin-top: 0.3em;
+    background: white;
+  }
+  
+  .dropdown a {
+    display: flex;
+    align-items: center;
+    column-gap: var(--gap);
+    padding: 0.8em 1em;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdown a:hover {
+    background-color: var(--color);
+    color: white;
+  }
+  .dropdown {
+    position:relative;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    margin-top: 0.3em;
+    background: white;
+    transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+      
+    transform: translateY(0.5em);
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .show {
+    transform: translateY(0em);
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .arrow {
+    transform: rotate(180deg);
+    transition: 0.2s ease;
+  }
 .navigation a:hover{
     color: darkblue;
 }
@@ -225,10 +290,16 @@ section{
         font-size: 12px;
     }
     header{
-        padding: 10px 17px;
+        padding: 10px 20px;
     } 
     .navigation a{
         padding-left: 8px;
+    }
+    .dropdown{
+        padding-right: 8em;
+    }
+    .btn{
+        padding-right: 10em;
     }
     .title{
         font-size: 1.7em;
@@ -252,6 +323,7 @@ section{
     body{
         font-size: 10px;
     }
+    
     .main-content h2{
         font-size: 0.8em;
     }
