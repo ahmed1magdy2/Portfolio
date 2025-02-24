@@ -17,9 +17,9 @@ document.documentElement.addEventListener("click", () => {
         toggleDropdown();
     }
 });
-document.querySelectorAll('a').forEach(link => {
-    link.setAttribute('target', '_blank');
-});
+//document.querySelectorAll('a').forEach(link => {
+//    link.setAttribute('target', '_blank');
+//});
 document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
 });
